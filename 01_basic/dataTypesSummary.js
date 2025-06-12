@@ -19,3 +19,38 @@
 
 let score = 100;
 //it doesnt need to defined a typed 
+
+let isLoggedIn = true;
+//boolean value 
+
+ let secondValue = 33.3
+ //flot value and number 
+
+ let phoneNumber;
+ //undefined  
+
+ let thirdValue = null;
+//null and object 
+
+ let id = Symbol('123')
+ let nextId = Symbol('123')
+ console.log(id === nextId); //false
+
+ let hugeNumber = 12334566775n //undefined 
+ //n used for Bigint 
+
+ let carBrand = ["BYD", "BMW", "TATA"];
+//object that represent car brands
+
+let personalDetail= {
+    name:"Sujit",
+    age: 20
+}
+//example of array 
+
+let myName = function(){
+  console.log("Sujit Bhusal");
+}
+//Example of function 
+  
+
