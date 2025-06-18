@@ -42,15 +42,38 @@ let isLoggedIn = true;
  let carBrand = ["BYD", "BMW", "TATA"];
 //object that represent car brands
 
-let personalDetail= {
+/*let personalDetail= {
     name:"Sujit",
     age: 20
-}
+}*/
 //example of array 
 
 let myName = function(){
   console.log("Sujit Bhusal");
 }
 //Example of function 
-  
 
+
+/*
+  Stack Memory(Primitive) amd Heap Memory (Non-Primitive)
+*/
+  
+  let myCountry = "Nepal"
+  let anothercountry = myCountry
+ 
+  anothercountry = "USA"
+  console.log(anothercountry);//USA
+  console.log(myCountry); //Nepal 
+  //Examples of Stack memory
+
+
+  let personalDetail= {
+    name:"Sujit",
+    age: 20
+}
+  let studentDetail = personalDetail
+  studentDetail.age =21 
+  console.log(personalDetail.age); 
+  //Example of heap memory
+  
+  
