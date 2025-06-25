@@ -28,3 +28,27 @@ console.log(myaddress.charAt(1)); //it shows the character at a specific locatio
 console.log(myaddress.includes('a'));//it check if string contains something //true 
 
 
+console.log(myaddress.toUpperCase());// it convert into uppercase
+console.log(myaddress.toLowerCase());//it convert into lowercase
+
+
+console.log(myaddress.slice(1,8)); //it slice Kathmandu from k and u but not includes u 
+
+
+console.log(myaddress.replace("Ka","La"));//in word Kathmandu Ka is replaced by La It replace word 
+//console.log(myaddress); but it doesnt change original value 
+
+let a = "Name"
+let b = "address"
+ 
+console.log(b.concat(a, "Kathmandu")); //it is used to add a strings
+
+
+let c ="   Chitwan  "
+console.log(c.trim()); //remove whitespace
+
+
+
+
+
+
