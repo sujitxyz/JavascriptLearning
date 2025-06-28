@@ -81,4 +81,4 @@ console.log(Object.values(instaUser));//it show the value of object
 
 const {userAddress: address} = user3
 //console.log(userAddress);
-console.log(address);
+console.log(address);           
