@@ -68,5 +68,17 @@ console.log(Object.values(instaUser));//it show the value of object
 
  console.log(instaUser.hasOwnProperty('Name'));//it show proproties exist or not 
 
- 
+ //Destuructring of object 
+ let user3 = {
+   idNumber: 1,
+    userAddress: "Kathmandu",
+    userName: "Sujit",
+    email: "Bhusal@email.com"
+ }
                    
+//  user3.userAddress
+//it is right but to write cleaner version of it
+
+const {userAddress: address} = user3
+//console.log(userAddress);
+console.log(address);
