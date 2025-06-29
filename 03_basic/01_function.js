@@ -54,11 +54,13 @@ function isSleeping(userName){
  })
 
 
- const numberOFmark = [90, 100, 200, 300]
+const numberOFmark = [90, 100, 200, 300]
    
  function studentMark(studentScore){
     return studentScore[1]
  }
 
- console.log(studentMark(numberOFmark));
+ console.log(studentMark([
+  90, 100, 200
+ ]));
  
