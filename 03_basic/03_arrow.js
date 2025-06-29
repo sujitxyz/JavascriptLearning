@@ -17,3 +17,10 @@ user.personalDetails()
 user.userName = "Ram"
 user.personalDetails()
 console.log(this); //current context is {}
+
+function experiment(){
+    let userName = "Sujit"
+    console.log(this.userName); //undefined //it doesnt find context in function
+    
+}
+experiment()
