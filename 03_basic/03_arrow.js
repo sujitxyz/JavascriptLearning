@@ -24,3 +24,17 @@ function experiment(){
     
 }
 experiment()
+
+
+const experiment2 = function(){
+    let userName = "Sujit"
+    console.log(this.userName);//undefined 
+}
+experiment2()
+
+const experiment3 = () => {
+    let userName = "Sujit"
+    console.log(this.userName);
+}
+experiment3()
+//this only works in object 
