@@ -48,3 +48,14 @@ val1 = null ?? 20 ?? undefined
 //this operator avoid null and undefined
 
 console.log(val1);
+
+
+// Terniary Operator 
+
+// condition ? true : false
+
+
+let momoPrice =  120
+momoPrice < 100 ? console.log("momo price less than 100") : console.log("momo price more than 100");
+
+
