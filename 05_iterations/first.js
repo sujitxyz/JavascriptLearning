@@ -20,9 +20,19 @@ for (let i = 1; i <= 5; i++) {
 //multiplication table 
 
 for (let i = 1; i <= 5; i++) {
-   console.log(`Multiplication table of: ${i}`);
+   //console.log(`Multiplication table of: ${i}`);
      for (let j = 1; j <= 10; j++) {
-       console.log(`${i} * ${j} = ${i * j}`);   
+       //console.log(`${i} * ${j} = ${i * j}`);   
    }
+  
+}
+
+//for loop in array 
+
+let placesInNepal = ["Kathmandu", "Lalitpur", "Chitwan"]
+
+for (let i = 0; i < placesInNepal.length; i++) {
+  const element = placesInNepal[i];
+  console.log(element);
   
 }
