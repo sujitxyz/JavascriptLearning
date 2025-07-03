@@ -9,6 +9,14 @@ while (i <= 10) {
 let placesInNepal = ["Kathmandu", "Lalitpur", "Chitwan"]
 let j = 0
 while(j < placesInNepal.length){
-   console.log(placesInNepal[j]);
+   //console.log(placesInNepal[j]);
    j++
 }
+
+let k = 1
+do {
+    console.log(k)
+    k++
+} while (k <= 10);
+
+// if K = 11 it will also print 11 because js executes code execute line by line and in do while loop executes do first 
