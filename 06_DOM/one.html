@@ -13,8 +13,64 @@
 </head>
 <body class="bg-black">
     <div>
-        <h1  id="Heading" class="heading">DOM Learning</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h1  id="Heading" class="heading">DOM <span style="text-decoration: underline; color:aquamarine; display: none; ">Test text </span> Learning</h1>
+        <h2>Lorem, ipsum dolor. 1</h2>
+        <h2>Lorem, ipsum dolor. 2</h2>
+        <h2>Lorem, ipsum dolor. 3</h2>
+        <h2>Lorem, ipsum dolor. 4</h2>
+        
+        <p>Lorem ipsumsit amet.</p>  
+        
+        <ul>
+            <li class="item-List">one</li>
+            <li class="item-List">two</li>
+            <li class="item-List">three</li>
+            <li class="item-List">four</li>
+        </ul>
     </div>
 </body>
+<script>
+    const title = document.getElementById("Heading")
+    //which target <h1  id="Heading" class="heading">DOM Learning</h1> 
+
+    document.getElementById("Heading").setAttribute('class', 'heading' , 'title')
+    //which set attribute of exsiting class and id 
+   
+    //  title.style.background = "green"
+    //  title.style.padding = "10px"
+    //  title.style.borderRadius = "50px"
+     //it help to modify the data
+
+    //title.textContent //shows 'DOM Test text  Learning'
+
+    //title.innerText //shows 'DOM Learning'
+
+    //title.innerHTML // shows <h1  id="Heading" class="heading">DOM <span style="text-decoration: underline; color:aquamarine; display: none; ">Test text </span> Learning</h1>
+ 
+   //document.querySelector('h2')
+   //<h2>​Lorem, ipsum dolor. 1​</h2>​ which select 1 value of selection
+    
+        // const ulList = document.querySelector('ul')
+        // const liList = ulList.querySelector('li')
+        // liList.style.backgroundColor = "Blue"
+        // liList.style.padding = "10px"
+        // liList.innerText = "Blue"
+
+
+        // const Selection = document.querySelectorAll('li')
+           //it select all value in node list 
+          //to change the value we can do this way 
+        //  Selection.forEach((li) => li.style.backgroundColor = "Blue")
+        //Selection[1].style.backgroundColor = "Orange"
+
+
+        // const HtmlCOllection = document.getElementsByClassName("item-List")
+        //we need to convert into array because it is in HtmlCollection
+
+        //const ConvertedArray =Array.from(HtmlCollection) //it convert into array 
+
+        //ConvertedArray.forEach((li) => li.style.color = "green") //now it will modify the value 
+
+        
+</script>
 </html>
