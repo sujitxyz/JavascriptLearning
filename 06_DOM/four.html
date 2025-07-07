@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(addElement){
+       const li = document.createElement("li")
+       li.innerHTML = `${addElement}`
+       document.querySelector(".language").appendChild(li)
+    }
+   addLanguage("Python")
+    
+       //add
+
+       const addOptiLanguage = (addElement) =>{
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(addElement))
+          document.querySelector(".language").appendChild(li)
+       }
+       addOptiLanguage("TypeScript")
+       addOptiLanguage("Java")
+       addOptiLanguage("GOLANG")
+       addOptiLanguage("C++")
+       
+
+       //Edit
+      const SecondLang = document.querySelector("li:nth-child(2)")
+      //SecondLang.innerHTML = "C"
+       const newLi = document.createElement("li")
+       newLi.textContent = "C"
+       SecondLang.replaceWith(newLi)
+
+       const firstLang = document.querySelector("li:nth-child(1)")
+       firstLang.outerHTML = "<li>React</li>"
+
+
+       //remove
+
+       const lastLang = document.querySelector("li:last-child")
+       lastLang.remove()
+
+
+       
+
+
+</script>
+</html>
