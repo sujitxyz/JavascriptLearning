@@ -60,7 +60,7 @@ function displayGuess(guess){
  remaining.innerHTML = `${12 - numOfGuess}`
 }
 function displayMessage(message){
-lowOrhigh.innerHTML = `<h2>${message}<h2>`
+lowOrhigh.innerHTML = `<h2>${message}</h2>`
 }
 function endGame(){
  UserInput.value = ""
