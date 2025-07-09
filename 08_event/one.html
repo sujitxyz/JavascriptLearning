@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #212121; color: whitesmoke;">
+    <ul id="images">
+        <li><img width="200px" height="150px" id="wave" src="https://images.pexels.com/photos/32908779/pexels-photo-32908779.jpeg?_gl=1*rddju4*_ga*ODA3NDY4MjUuMTc1MjA0NzQ0Mw..*_ga_8JE65Q40S6*czE3NTIwNDc0NDMkbzEkZzEkdDE3NTIwNDc0NDgkajU1JGwwJGgw" alt="Golden-Wave"></li>
+        <li><img width="200px" height="150px" id="house" src="https://images.pexels.com/photos/32507242/pexels-photo-32507242.jpeg?_gl=1*ny6cdk*_ga*ODA3NDY4MjUuMTc1MjA0NzQ0Mw..*_ga_8JE65Q40S6*czE3NTIwNDc0NDMkbzEkZzEkdDE3NTIwNDc3MDAkajQxJGwwJGgw" alt="house"></li>
+        <li><img width="200px" height="150px" id="sideWalk" src="https://images.pexels.com/photos/32405342/pexels-photo-32405342.jpeg?_gl=1*ayu3l2*_ga*ODA3NDY4MjUuMTc1MjA0NzQ0Mw..*_ga_8JE65Q40S6*czE3NTIwNDc0NDMkbzEkZzEkdDE3NTIwNDc4MTIkajU5JGwwJGgw" alt="sideWalk"></li>
+        <li><img width="200px" height="150px" id="sideWalk" src="https://images.pexels.com/photos/32703696/pexels-photo-32703696.jpeg?_gl=1*ykgyg3*_ga*ODA3NDY4MjUuMTc1MjA0NzQ0Mw..*_ga_8JE65Q40S6*czE3NTIwNDc0NDMkbzEkZzEkdDE3NTIwNDc5MjQkajEyJGwwJGgw" alt="sideWalk"></li>
+        <li><a href="https://google.com" style ="color: aliceblue;"  id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+   const images = document.querySelector("#images")
+   images.addEventListener("click", function(e){
+    if (e.target.tagName === "IMG"){
+ let removeImg = e.target.parentNode
+    removeImg.remove()
+    }
+
+   })
+</script>
+</html>
