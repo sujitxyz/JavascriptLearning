@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set TimeOut</title>
+</head>
+<body>
+    <h1>My Name is Sujit Bhusal</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+//    setInterval(function(){
+//     console.log("sujit",Math.random())
+//    }, 2000)
+const stop = document.getElementById("stop")
+   
+  const h1 = document.querySelector("h1")
+  let i = 1;
+   const start = document.getElementById("start")
+   let DisplayMessage = null
+     
+   start.addEventListener("click", (e)=>{
+      DisplayMessage = setInterval(function(){
+     h1.innerHTML = `My Name is Sujit Bhusal ${i++}`
+     console.log("sujit");}, 2000)
+   })
+
+   stop.addEventListener("click", (e)=>{
+    clearInterval(DisplayMessage)
+    console.log("stopped")
+   })
+
+</script>
+</html>
