@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set TimeOut</title>
+</head>
+<body>
+    <h1>My Name is Sujit Bhusal</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Sujit")
+
+    // }, 1000)
+    //in 1 second it will print Sujit
+
+    const changeText = ()=> {
+         const h1 = document.querySelector("h1")
+         h1.innerHTML = "I am learning Javascript"
+         h1.style.color = "red"
+    }
+     const change = setTimeout(changeText, 5000)
+
+
+    //to stop from changing 
+    const stop = document.querySelector("#stop")
+    stop.addEventListener("click", function(e){
+       clearTimeout(change)
+       console.log("stopped")
+    })
+   
+</script>
+</html>
