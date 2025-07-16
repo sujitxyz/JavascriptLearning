@@ -20,3 +20,32 @@ Object.prototype.sujit = function(){
 
 // addressSpeciallity.sujit()
 address.sujit()
+
+
+//inheritance
+
+const animal = {
+  eats: true,
+  walk() {
+    console.log("Animal walks");
+  }
+}
+
+const dog = {
+  barks: true
+}
+
+//old styles
+
+// dog.__proto__ = animal
+
+// console.log(dog.eats);
+// console.log(dog.walk());
+
+//new style 
+Object.setPrototypeOf(dog, animal)
+
+console.log(dog.eats)
+console.log(dog.walk())
+
+
