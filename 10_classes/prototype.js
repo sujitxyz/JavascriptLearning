@@ -48,4 +48,14 @@ Object.setPrototypeOf(dog, animal)
 console.log(dog.eats)
 console.log(dog.walk())
 
+//practical approach 
 
+let userName = "Sujit    "
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`)
+    console.log(`True Length is ${this.trim().length}`)
+}
+
+userName.trueLength()
+"Ram".trueLength()
